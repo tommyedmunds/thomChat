@@ -18,13 +18,12 @@ function App() {
 
   return (
     <div className='App'>
-      <header className='app-header'>React Chat</header>
       {socket ? (
         <div className='chat-container'>
           <MessageBoard socket={socket} />
         </div>
       ) : (
-        <div>Not Connected</div>
+        <div>Not Connected to Server</div>
       )}
     </div>
   );
